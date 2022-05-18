@@ -1,0 +1,12 @@
+
+<p style="color: green"><%= notice %></p>
+
+<%= render @index %>
+
+<div>
+  <%= image_tag @index.main_image %>
+  <%= link_to "Edit this index", edit_index_path(@index) %> |
+  <%= link_to "Back to indices", indices_path %>
+
+  <%= button_to "Destroy this index", @index, method: :delete %>
+</div>
